@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="0px"
+    android:background="@color/corFundo"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="331dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="Quanto pesa o que você quer levar ao espaço?"
+        android:textAlignment="viewStart"
+        android:textColor="@color/corTexto"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="70px" />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="  Ex: 75Kg"
+        android:inputType="numberDecimal"
+        android:background="@color/corBtn"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonshape"
+        android:elegantTextHeight="true"
+        android:shadowColor="@color/corSombra"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Calcular"
+        android:textAlignment="center"
+        android:textColor="@color/corTextBtn"
+        android:textStyle="bold"/>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView"
+        android:layout_width="386dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/logo" />
+</RelativeLayout>
+
+</LinearLayout>
